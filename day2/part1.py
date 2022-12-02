@@ -1,8 +1,11 @@
-with open("input.txt") as f:
-    lines = list(map(lambda x: x.strip(), f.readlines()))
+def get_pairs():
+    with open("input.txt") as f:
+        lines = list(map(lambda x: x.strip(), f.readlines()))
+        return lines
 
 
 def get_score():
+    lines = get_pairs()
     score = 0
     opp_rock = "A"
     opp_paper = "B"
@@ -40,6 +43,3 @@ def get_score():
             else:
                 score += tie
     return score
-
-
-print(get_score())
