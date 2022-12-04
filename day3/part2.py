@@ -23,4 +23,4 @@ def main():
         for key, value in lower_upper.items():
             if key in group[0] and key in group[1] and key in group[2]:
                 total_value += value
-    return value
+    return total_value
