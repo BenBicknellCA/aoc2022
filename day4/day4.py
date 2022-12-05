@@ -23,17 +23,7 @@ def main():
 
             if group1.issubset(group2) or group2.issubset(group1):
                 total += 1
-
-    # if group1 in group2 or group2 in group1:
-    #     total += 1
     print(total)
-
-    # if group[0] > group[2] and group[1] > group[3]:
-    #     total += 1
-    # elif group[2] > group[0] and group[3] > group[1]:
-    #     total += 1
-    # print(group)
-    # print(total)
 
 
 main()
