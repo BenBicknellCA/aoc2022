@@ -18,12 +18,9 @@ def main():
                 (elf_str[2::4]),
                 (elf_str[3::4]),
             ):
-                group1 = set(range(int(elf1), int(elf2) + 1))
-                group2 = set(range(int(elf3), int(elf4) + 1))
-
-            if group1.issubset(group2) or group2.issubset(group1):
-                total += 1
-    print(total)
+                if int(elf2) >= int(elf3) and int(elf4) >= int(elf1):
+                    total += 1
+        print(total)
 
 
 main()
