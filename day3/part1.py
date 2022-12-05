@@ -12,7 +12,4 @@ def get_comparts():
     lower_upper = upper_dict | lower_dict
     for i in input:
         compart_1, compart_2 = i[: len(i) // 2], i[len(i) // 2 :]
-        for key, value in lower_upper.items():
-            if key in compart_1 and key in compart_2:
-                total_value += value
-    return total_value
+        print(compart_1, compart_2)
